@@ -10,12 +10,12 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  docs: {
+    theme: themes.dark
+  },
   darkMode: {
     dark: {...themes.dark, appBg: 'black'},
     light: {...themes.normal, appBg: 'red'}
-  },
-  docs: {
-    theme: themes.dark
   },
   themes: {
     theme: themes.dark

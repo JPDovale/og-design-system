@@ -7,8 +7,12 @@ export default {
     args: { 
         children: 'Clique aqui!',
     },
-    argTypes: {
-       
+    argTypes: { 
+        children: {
+            table: {
+                disable: true
+            },
+        },
     }
 } as Meta<ButtonProps>
 
