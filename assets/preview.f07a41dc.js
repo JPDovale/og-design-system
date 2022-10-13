@@ -1,0 +1,2 @@
+import{t as r}from"./index.b750e62d.js";import"./iframe.c5409963.js";import"./es.map.constructor.60499e56.js";import"./es.number.to-fixed.0533b092.js";import"./index.5c28fc7e.js";const p={actions:{argTypesRegex:"^on[A-Z].*"},controls:{matchers:{color:/(background|color)$/i,date:/Date$/}},docs:{theme:r.dark},darkMode:{dark:{...r.dark,appBg:"black"},light:{...r.normal,appBg:"red"}},themes:{theme:r.dark}};export{p as parameters};
+//# sourceMappingURL=preview.f07a41dc.js.map
