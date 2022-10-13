@@ -56,8 +56,11 @@ module.exports = {
     },
 
     letterSpacing: {
-      xs : '0.04em',      
-      sm : '0.08em',
+      xs: '0.04em',      
+      sm: '0.08em',
+      md: '0.16em',
+      lg: '0.32em',
+      xl: '0.40em',
     },
 
     boxShadow: {

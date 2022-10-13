@@ -4,12 +4,13 @@ import clsx  from 'clsx'
 
 export interface HeadingProps {
     size?: 'sm' | 'md' | 'lg',
-    letterSpacing?: 'xs' | 'sm',
+    letterSpacing?: 'xs' | 'sm' | 'md' | 'lg' | 'xl',
     children: ReactNode,
-    asChild?: boolean 
+    asChild?: boolean,
+    className?: string
 }
 
-export default function Heading({ size = 'md', children, asChild, letterSpacing }: HeadingProps){
+export default function Heading({ size = 'md', children, asChild, letterSpacing, className }: HeadingProps){
     const Comp = asChild? Slot : 'h2'
 
     return (
@@ -24,7 +25,11 @@ export default function Heading({ size = 'md', children, asChild, letterSpacing 
                 {
                     'tracking-xs': letterSpacing === 'xs',
                     'tracking-sm': letterSpacing === 'sm',
-                }
+                    'tracking-md': letterSpacing === 'md',
+                    'tracking-lg': letterSpacing === 'lg',
+                    'tracking-xl': letterSpacing === 'xl',
+                },
+                className
             )}
         >
             {children}

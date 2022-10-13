@@ -14,6 +14,12 @@ export default {
             control: {
                 type: 'inline-radio'
             }
+        },
+        letterSpacing: {
+            options: ['xs', 'sm', 'md', 'lg', 'xl'],
+            control: {
+                type: 'inline-radio'
+            }
         }
     }
 } as Meta<TextProps>

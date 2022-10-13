@@ -4,11 +4,13 @@ import clsx  from 'clsx'
 
 export interface TextProps {
     size?: 'sm' | 'md' | 'lg',
+    letterSpacing?: 'xs' | 'sm' | 'md' | 'lg' | 'xl',
     children: ReactNode,
-    asChild?: boolean 
+    asChild?: boolean,
+    className?: string
 }
 
-export default function Text({ size = 'md', children, asChild }: TextProps){
+export default function Text({ size = 'md', children, asChild, className , letterSpacing}: TextProps){
     const Comp = asChild? Slot : 'span'
 
     return (
@@ -19,7 +21,15 @@ export default function Text({ size = 'md', children, asChild }: TextProps){
                     'text-xs': size === 'sm',
                     'text-sm': size === 'md',
                     'text-md': size === 'lg',
-                }
+                },
+                {
+                    'tracking-xs': letterSpacing === 'xs',
+                    'tracking-sm': letterSpacing === 'sm',
+                    'tracking-md': letterSpacing === 'md',
+                    'tracking-lg': letterSpacing === 'lg',
+                    'tracking-xl': letterSpacing === 'xl',
+                },
+                className
             )}
         >
             {children}

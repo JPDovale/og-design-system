@@ -16,7 +16,7 @@ export default {
             }
         },
         letterSpacing: {
-            options: ['xs', 'sm'],
+            options: ['xs', 'sm', 'md', 'lg', 'xl'],
             control: {
                 type: 'inline-radio'
             }
